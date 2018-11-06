@@ -53,7 +53,7 @@ The following are the three main layer labels of a Neural Network
 
 ## Reinforcement Learning Algorithms
 
-#1. Q-learning
+1. Q-learning
 
 Can handle problems with stochastic transitions and rewards
 Finds an optimal action-selection policy for any given finite Markov Decision Process
@@ -69,7 +69,7 @@ Cons:
 - Lack of generality
 - Higher computational  cost when larger state space
 
-#2. Deep Q Network
+2. Deep Q Network
 
 DQN is a form of Q-learning with function approximation using a neural network.
 Tries to learn a state-action value function Q by minimizing temporal-difference errors.
@@ -81,7 +81,7 @@ Cons:
 - DQN fails if Q function (i.e. reward function) is too complex to be learned
 - DQN has to go through an expensive action discretization process
 
-#3. Policy Gradient
+3. Policy Gradient
 
 Relies upon optimizing parameterized policies w.r.t expected return (long-term cumulative reward) by gradient descent.
 
@@ -95,7 +95,7 @@ Cons:
 - Tendency to converge to a local optimal
 -High variance in estimating the gradient, hence the estimation can be very noisy, and bad gradient estimate could adversely impact the stability of the learning algorithm
 
-#4. Actor Critic
+4. Actor Critic
 
 - Combine Policy Gradients and Q-learning by training both an actor (the policy) and a critic (the Q-function).
 - Actor decides which action to take, and the critic tells the actor how good its action was and how it should adjust
