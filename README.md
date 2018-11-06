@@ -1,6 +1,130 @@
-# Reinforcement-Learning-Comparative-Study
+### Reinforcement-Learning-Comparative-Study
 
-Abstract—Reinforcement learning is a type of machine learning that involves a software agent deciding to take an action in an environment leading to maximum cumulative rewards. The learner uses trial and error methods instead of already specified steps to discover actions leading to maximum rewards. This trial and error search and delayed rewards are the distinguishing features of reinforcement learning. The reinforcement learning algorithms are compared based on the score they obtain in solving the problem based on an environment. The time taken by algorithms on various maps corresponding to the environment is also compared in this paper. It can be observed that algorithm performance varies on different environments, but it is comparable to one another.
+Reinforcement learning is a type of machine learning that involves a software agent deciding to take an action in an environment leading to maximum cumulative rewards. The learner uses trial and error methods instead of already specified steps to discover actions leading to maximum rewards. This trial and error search and delayed rewards are the distinguishing features of reinforcement learning. The reinforcement learning algorithms are compared based on the score they obtain in solving the problem based on an environment. The time taken by algorithms on various maps corresponding to the environment is also compared in this paper. It can be observed that algorithm performance varies on different environments, but it is comparable to one another.
+
+# Use of Deep Learning through Reinforcement Learning on Game Playing Agents
+
+Deep Learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world
+
+The first, kickstarting the revolution in DRL, was the development of an algorithm that could learn to play a range of Atari 2600 video games at a superhuman level, directly from image pixels
+
+In machine learning, the environment is typically formulated as a Markov decision process (MDP), as many reinforcement learning algorithms for this context utilize dynamic programming techniques.
+
+# Reinforcement Learning
+
+![alt text](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)
+
+- Action (A): All the possible moves that the agent can take
+- State (S): Current situation returned by the environment
+- Reward (R): An immediate return send back from the environment to evaluate the last action
+- Policy (π): The strategy that the agent employs to determine next action based on the current state
+- Value (V): The expected long-term return with discount, as opposed to the short-term reward R. Vπ(s) is defined as the expected long-term return of the current state sunder policy π
+- Q-value or action-value (Q): Q-value is similar to Value, except that it takes an extra parameter, the current action a. Qπ(s, a) refers to the long-term return of the current state s, taking action a under policy π.
+
+
+# Markov Decision Process
+
+RL can be described as a Markov decision process (MDP), which consists of:
+- A set of states S, plus a distribution of starting states p(s0)
+- A set of actions A
+- Transition dynamics T (st+1|st, at) that map a state action pair at time t onto a distribution of states at time t + 1
+- An immediate/instantaneous reward function R(st, at, st+1)
+- A discount factor γ ∈ [0, 1], where lower values place more emphasis on immediate rewards
+
+# Neural Networks
+
+Neural Networks, or connectionist systems, are such who learn, i.e. progressively improve performance on, by considering examples, generally without task-specific programming. For example, in a task of identifying “cats”, a Neural Network learns to identify them without any prior knowledge about cats. Rather, it evolves its own set of characteristics from learning from the material they process. Commonly, Neural Networks are also called as “Global Approximator Functions”.
+
+# Building Blocks of Neural Networks
+
+The following are the three main layer labels of a Neural Network
+
+1. Input Layer
+2. Hidden Layer(s)
+3. Output Layer
+
+# Functions of a Neural Network
+
+- Take inputs through the input layer
+- Forward Propagation (Feed Forward)
+- Performance Evaluation
+- Backward Propagation
+- Repeat to achieve a desired “Goal”
+
+## Reinforcement Learning Algorithms
+
+#1. Q-learning
+
+Can handle problems with stochastic transitions and rewards
+Finds an optimal action-selection policy for any given finite Markov Decision Process
+
+Types:
+- Policy Iteration: Starts with a random policy, then finds the value function of that policy, then finds the new policy based on previous value function.
+- Value iteration: Starts with a random value function, then finds a new value function in an iterative process until it reaches optimal value function.
+
+Pros:
+- Needs no accurate representation of the environment in order to be effective
+
+Cons:
+- Lack of generality
+- Higher computational  cost when larger state space
+
+#2. Deep Q Network
+
+DQN is a form of Q-learning with function approximation using a neural network.
+Tries to learn a state-action value function Q by minimizing temporal-difference errors.
+
+Pros:
+- Relatively stable performance when bad gradient is estimated
+
+Cons:
+- DQN fails if Q function (i.e. reward function) is too complex to be learned
+- DQN has to go through an expensive action discretization process
+
+#3. Policy Gradient
+
+Relies upon optimizing parameterized policies w.r.t expected return (long-term cumulative reward) by gradient descent.
+
+Pros:
+- Applicable on wider range of problems, even where DQN fails
+- Can be applied to model continuous action space since the policy network models probability distribution
+- Capable of learning stochastic policies as it models probabilities of actions
+- Usually show faster convergence rate than DQN
+
+Cons:
+- Tendency to converge to a local optimal
+-High variance in estimating the gradient, hence the estimation can be very noisy, and bad gradient estimate could adversely impact the stability of the learning algorithm
+
+#4. Actor Critic
+
+- Combine Policy Gradients and Q-learning by training both an actor (the policy) and a critic (the Q-function).
+- Actor decides which action to take, and the critic tells the actor how good its action was and how it should adjust
+- Alleviates the task of the critic as it only has to learn the values of (state, action) pairs generated by the policy
+- Can also incorporate Q-learning tricks e.g. experience replay
+- Uses advantage function:  How much an action was better than expected
+
+## Pre-Processing
+
+The direct output of the Ping Pong game is 210x160x3. 
+Each image is on a 0-255 color scale. 
+- Processing:	
+* Cropping  
+* Removal of background layer
+* Down-sampling
+
+- For Policy Gradient, images of 80x80 size are generated 
+- For Actor Critic, images of 80x80 size are generated 
+- For Deep Q-Net, images of 84x84 size are generated  
+
+
+
+
+
+
+
+
+
+
 
 Apart from comparing the currently available various Reinforcement Learning algorithms on unique environments, we also decided to create our own environment for the Android platform.
 
@@ -31,4 +155,3 @@ The “done” state is integrated with the pre-processing of the observation ta
 
 We then implemented a Deep Q-Learning agent into our newly created environment.
 
-![alt text](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)
