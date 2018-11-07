@@ -1,8 +1,8 @@
-### Reinforcement-Learning-Comparative-Study
+# Reinforcement-Learning-Comparative-Study
 
 Reinforcement learning is a type of machine learning that involves a software agent deciding to take an action in an environment leading to maximum cumulative rewards. The learner uses trial and error methods instead of already specified steps to discover actions leading to maximum rewards. This trial and error search and delayed rewards are the distinguishing features of reinforcement learning. The reinforcement learning algorithms are compared based on the score they obtain in solving the problem based on an environment. The time taken by algorithms on various maps corresponding to the environment is also compared in this paper. It can be observed that algorithm performance varies on different environments, but it is comparable to one another.
 
-# Use of Deep Learning through Reinforcement Learning on Game Playing Agents
+## Use of Deep Learning through Reinforcement Learning on Game Playing Agents
 
 Deep Learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world
 
@@ -10,7 +10,7 @@ The first, kickstarting the revolution in DRL, was the development of an algorit
 
 In machine learning, the environment is typically formulated as a Markov decision process (MDP), as many reinforcement learning algorithms for this context utilize dynamic programming techniques.
 
-# Reinforcement Learning
+## Reinforcement Learning
 
 ![alt text](https://www.kdnuggets.com/images/reinforcement-learning-fig1-700.jpg)
 
@@ -22,7 +22,7 @@ In machine learning, the environment is typically formulated as a Markov decisio
 - Q-value or action-value (Q): Q-value is similar to Value, except that it takes an extra parameter, the current action a. Qπ(s, a) refers to the long-term return of the current state s, taking action a under policy π.
 
 
-# Markov Decision Process
+## Markov Decision Process
 
 RL can be described as a Markov decision process (MDP), which consists of:
 - A set of states S, plus a distribution of starting states p(s0)
@@ -31,11 +31,11 @@ RL can be described as a Markov decision process (MDP), which consists of:
 - An immediate/instantaneous reward function R(st, at, st+1)
 - A discount factor γ ∈ [0, 1], where lower values place more emphasis on immediate rewards
 
-# Neural Networks
+## Neural Networks
 
 Neural Networks, or connectionist systems, are such who learn, i.e. progressively improve performance on, by considering examples, generally without task-specific programming. For example, in a task of identifying “cats”, a Neural Network learns to identify them without any prior knowledge about cats. Rather, it evolves its own set of characteristics from learning from the material they process. Commonly, Neural Networks are also called as “Global Approximator Functions”.
 
-# Building Blocks of Neural Networks
+## Building Blocks of Neural Networks
 
 The following are the three main layer labels of a Neural Network
 
@@ -43,7 +43,7 @@ The following are the three main layer labels of a Neural Network
 2. Hidden Layer(s)
 3. Output Layer
 
-# Functions of a Neural Network
+## Functions of a Neural Network
 
 - Take inputs through the input layer
 - Forward Propagation (Feed Forward)
@@ -116,15 +116,23 @@ Each image is on a 0-255 color scale.
 - For Actor Critic, images of 80x80 size are generated 
 - For Deep Q-Net, images of 84x84 size are generated  
 
+## Actor-Critic
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+
+## Deep Q Network
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
 
 
+## Implementation
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
 
 
-
-
-
+# Environment Creation for Android
 
 Apart from comparing the currently available various Reinforcement Learning algorithms on unique environments, we also decided to create our own environment for the Android platform.
 
@@ -141,7 +149,7 @@ The “done” flag is a boolean value which is a trigger to reset the episode a
 
 The environment allows the agent to perform actions inside it. Each unique environment has yet it’s own unique action space. The action space can be any large.
 
-What we did:
+## What we did:
 
 We captured continuous frames from the Android device through the ADB Interface taking the help of the Minicap library.
 
@@ -154,4 +162,40 @@ We identified the “reward” value function to be used for the environment.
 The “done” state is integrated with the pre-processing of the observation taken from the Android device’s frames.
 
 We then implemented a Deep Q-Learning agent into our newly created environment.
+
+
+## Steps:
+- Get screen frames from device
+* Used “minicap” framework for continuous frame capture from Android
+- Pre-process frames
+* Rescaled the frames to 320x200 shape
+* Applied a grayscale on each frame
+- Check for ‘Done’ state
+* Used SSIM (Structural Similarity Index) to identify the “done” frame
+- Decide action space and construct network
+* Each game environment has its own action space; defined as all the possible actions the agent can perform
+* Eg: Subway Surfers has 4 possible actions
+* Eg: Flappy Bird has 2 possible actions
+- Perform actions and get reward:
+* Used “MonkeyRunner” and “AndroidViewClient” to send simulated physical touches to the device as agent inputs
+* Depending on the “done” state, the reward is given; +1 for every action if not done state else 0
+
+# Pre-processing:
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+
+# Colored Frame Graphs
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+
+# Grayscale Frame Graphs
+
+![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+
+
+
+
+
 
