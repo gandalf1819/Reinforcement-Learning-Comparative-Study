@@ -180,17 +180,17 @@ We then implemented a Deep Q-Learning agent into our newly created environment.
 * Used “MonkeyRunner” and “AndroidViewClient” to send simulated physical touches to the device as agent inputs
 * Depending on the “done” state, the reward is given; +1 for every action if not done state else 0
 
-# Pre-processing:
+## Pre-processing
 
 ![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
 ![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
-# Colored Frame Graphs
+## Colored Frame Graphs
 
 ![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
-# Grayscale Frame Graphs
+## Grayscale Frame Graphs
 
 ![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
