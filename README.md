@@ -117,20 +117,13 @@ Each image is on a 0-255 color scale.
 - For Deep Q-Net, images of 84x84 size are generated  
 
 ## Actor-Critic
-
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+![actor-critic](https://user-images.githubusercontent.com/22028693/48115548-3c6f4480-e231-11e8-8a39-d04c2f042f45.png)
 
 ## Deep Q Network
-
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
-
-
+![dqn](https://user-images.githubusercontent.com/22028693/48115588-67f22f00-e231-11e8-9d58-a7d0a90290ef.png)
 
 ## Implementation
-
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
-
-
+![implementation](https://user-images.githubusercontent.com/22028693/48115607-793b3b80-e231-11e8-99a4-6f776f5dd7c8.png)
 
 # Environment Creation for Android
 
@@ -181,18 +174,16 @@ We then implemented a Deep Q-Learning agent into our newly created environment.
 * Depending on the “done” state, the reward is given; +1 for every action if not done state else 0
 
 ## Pre-processing
+![flappy-bird-1](https://user-images.githubusercontent.com/22028693/48115696-c7503f00-e231-11e8-80a0-86113a76ff67.png)
 
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
-
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+![flappy-bird-2](https://user-images.githubusercontent.com/22028693/48115715-d505c480-e231-11e8-80eb-3b235402874b.png)
 
 ## Colored Frame Graphs
-
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
+![colored-graphs-1](https://user-images.githubusercontent.com/22028693/48115646-9bcd5480-e231-11e8-860a-547f4b9d2096.png)
 
 ## Grayscale Frame Graphs
+![grayscale](https://user-images.githubusercontent.com/22028693/48115677-b4d60580-e231-11e8-810a-48b7cc93db9f.png)
 
-![alt-text](https://drive.google.com/drive/u/0/folders/19T72MR_8ZPmFw4hvgX3iYys-wHfvDh-v)
 
 
 
