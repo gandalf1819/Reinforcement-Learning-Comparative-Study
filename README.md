@@ -193,8 +193,7 @@ Please feel free to create a Pull Request for adding implementations of the algo
 
 ## License
 
-This project is licensed under the MIT License - see 
-
+This project is licensed under the MIT License
 
 
 
