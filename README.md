@@ -1,5 +1,7 @@
 # Reinforcement-Learning-Comparative-Study
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 Reinforcement learning is a type of machine learning that involves a software agent deciding to take an action in an environment leading to maximum cumulative rewards. The learner uses trial and error methods instead of already specified steps to discover actions leading to maximum rewards. This trial and error search and delayed rewards are the distinguishing features of reinforcement learning. The reinforcement learning algorithms are compared based on the score they obtain in solving the problem based on an environment. The time taken by algorithms on various maps corresponding to the environment is also compared in this paper. It can be observed that algorithm performance varies on different environments, but it is comparable to one another.
 
 ## Use of Deep Learning through Reinforcement Learning on Game Playing Agents
@@ -183,6 +185,15 @@ We then implemented a Deep Q-Learning agent into our newly created environment.
 
 ## Grayscale Frame Graphs
 ![grayscale](https://user-images.githubusercontent.com/22028693/48115677-b4d60580-e231-11e8-810a-48b7cc93db9f.png)
+
+
+## Contributions
+
+Please feel free to create a Pull Request for adding implementations of the algorithms discussed in different frameworks like TensorFlow, Keras, PyTorch, Caffe, etc. or improving the existing implementations.
+
+## License
+
+This project is licensed under the MIT License - see 
 
 
 
