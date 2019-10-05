@@ -186,6 +186,12 @@ We then implemented a Deep Q-Learning agent into our newly created environment.
 ## Grayscale Frame Graphs
 ![grayscale](https://user-images.githubusercontent.com/22028693/48115677-b4d60580-e231-11e8-810a-48b7cc93db9f.png)
 
+## Team
+
+Nikhil Sangvikar 
+Madhujita Ambaskar ![madhujita](https://github.com/madhujita)
+Chinmay Wyawahare ![chinmay](https://github.com/gandalf1819)
+Prathmesh Palande ![prathmesh](https://github.com/prathmeshpalande)
 
 ## Contributions
 
