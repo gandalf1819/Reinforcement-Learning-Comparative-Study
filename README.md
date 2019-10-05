@@ -188,10 +188,10 @@ We then implemented a Deep Q-Learning agent into our newly created environment.
 
 ## Team
 
-* Nikhil Sangvikar 
-* Madhujita Ambaskar ![madhujita](https://github.com/madhujita)
-* Chinmay Wyawahare ![chinmay](https://github.com/gandalf1819)
-* Prathmesh Palande ![prathmesh](https://github.com/prathmeshpalande)
+* [Nikhil Sangvikar]()
+* [Madhujita Ambaskar](https://github.com/madhujita)
+* [Chinmay Wyawahare](https://github.com/gandalf1819)
+* [Prathmesh Palande](https://github.com/prathmeshpalande)
 
 ## Contributions
 
