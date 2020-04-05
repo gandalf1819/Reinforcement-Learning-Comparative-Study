@@ -197,12 +197,10 @@ We then implemented a Deep Q-Learning agent into our newly created environment.
 
 Please feel free to create a Pull Request for adding implementations of the algorithms discussed in different frameworks like TensorFlow, Keras, PyTorch, Caffe, etc. or improving the existing implementations.
 
+## Support
+
+If you found this useful, please consider starring(★) the repo so that it can reach a broader audience
+
 ## License
 
-This project is licensed under the MIT License
-
-
-
-
-
-
+This project is licensed under the MIT License. Feel free to create a Pull Request for adding implementations or suggesting new ideas to make the analysis more insightful
